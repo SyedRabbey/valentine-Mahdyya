@@ -71,6 +71,16 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('question2Text').textContent = config.questions.second.text;
     document.getElementById('startText').textContent = config.questions.second.startText;
     document.getElementById('nextBtn').textContent = config.questions.second.nextBtn;
+    // Set video question texts
+    document.getElementById('questionVideoText').textContent =
+        config.questions.video.text;
+    
+    document.getElementById('videoSource').src =
+        config.questions.video.videoUrl;
+    
+    document.getElementById('videoNextBtn').textContent =
+        config.questions.video.nextBtn;
+
     
     // Set third question texts
     document.getElementById('question3Text').textContent = config.questions.third.text;
@@ -173,28 +183,6 @@ loveMeter.addEventListener('input', () => {
 window.addEventListener('DOMContentLoaded', setInitialPosition);
 window.addEventListener('load', setInitialPosition);
 
-function renderVideoQuestion() {
-    const app = document.getElementById("app");
-    const q = VALENTINE_CONFIG.questions.video;
-
-    app.innerHTML = `
-        <div class="question-container">
-            <h1>${q.text}</h1>
-
-            <video class="embedded-video" controls>
-                <source src="${q.videoUrl}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <button class="next-btn">${q.nextBtn}</button>
-        </div>
-    `;
-
-    document.querySelector(".next-btn").onclick = () => {
-        currentQuestion = "third";
-        renderQuestion();
-    };
-}
 
 // Celebration function
 function celebrate() {
@@ -252,6 +240,8 @@ function setupMusicPlayer() {
         }
     }
 
+    
+
     // Toggle music on button click
     musicToggle.addEventListener('click', () => {
         if (bgMusic.paused) {
@@ -262,4 +252,14 @@ function setupMusicPlayer() {
             musicToggle.textContent = config.music.startText;
         }
     });
+    document.addEventListener('DOMContentLoaded', () => {
+    const videoNextBtn = document.getElementById('videoNextBtn');
+    if (videoNextBtn) {
+        videoNextBtn.addEventListener('click', () => {
+            showNextQuestion(3);
+        });
+    }
+});
+
+    
 } 

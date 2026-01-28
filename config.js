@@ -22,42 +22,29 @@ const CONFIG = {
     
     questions: {
         first: {
-            text: "Do you think I'm hot?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "You're soooo sexy! ❤️"           // Secret hover message
+            text: "Do you think I'm hot?",
+            yesBtn: "Yes",
+            noBtn: "No",
+            secretAnswer: "You're soooo sexy! ❤️"
         },
+    
         second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
-
+            text: "How much do you love me?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
+        },
+    
         video: {
             text: "Watch this before answering 💖",
             videoUrl: "assets/video.mp4",
             nextBtn: "Next ❤️"
-        
         },
+    
         third: {
-            text: "Will you pleaaaase listen to those africans and be my valentine? 🌹", // The big question!
-            yesBtn: "Hmmmm yeah!",                                             // Text for "Yes" button
-            noBtn: "Yes I will!"                                                 // Text for "No" button
+            text: "Will you pleaaaase listen to those africans and be my valentine? 🌹",
+            yesBtn: "Hmmmm yeah!",
+            noBtn: "Yes I will!"
         }
-    },
-
-    // Love meter messages
-    // They show up depending on how far they slide the meter
-    loveMessages: {
-        extreme: "Damn girl you love me that much?! 🥰🚀💝",  // Shows when they go past 5000%
-        high: "Hmmm you love me I guess. 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
-    },
-
-    // Messages that appear after they say "Yes!"
-    celebration: {
-        title: "Wahooooooo I'm the luckiest man in the world! 🎉💝💖💝💓",
-        message: "Be ready for Feb 14th beautiful!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
     // Color scheme for the website

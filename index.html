@@ -55,16 +55,16 @@
         </div>
 
         
-        <!-- Video Question (Africans) -->
+        <!-- Video Question -->
         <div id="questionVideo" class="question-section hidden">
-        <h1 id="questionVideoText"></h1>
-    
-        <video class="embedded-video" controls>
-            <source src="1000033823.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    
-            <button class="cute-btn" onclick="showNextQuestion(3)" id="nextBtn"></button>
+            <h2 id="questionVideoText"></h2>
+        
+            <video class="embedded-video" controls id="questionVideoPlayer">
+                <source id="videoSource" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+            <button class="cute-btn" onclick="showNextQuestion(3)" id="videoNextBtn"></button>
         </div>
 
         

@@ -36,6 +36,15 @@ body {
     overflow: visible !important;
 }
 
+.container video {
+    width: 100%;      /* makes video fit container width */
+    height: auto;     /* keeps aspect ratio */
+    border-radius: 15px; /* optional: match container style */
+    display: block;   /* removes any inline spacing */
+    margin: 0 auto;   /* center the video */
+}
+
+
 .floating-elements {
     position: fixed;
     width: 100%;

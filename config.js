@@ -80,7 +80,7 @@ const CONFIG = {
         musicUrl: "https://res.cloudinary.com/ddwwxocxj/video/upload/v1769628225/Lesley_Gore_-_Sunshine_Lollipops_And_Rainbows__mp3.pm_lstacy.mp3", // Music streaming URL
         startText: "🎵 Play Music",        // Button text to start music
         stopText: "🔇 Stop Music",         // Button text to stop music
-        volume: 1.0                       // Volume level (0.0 to 1.0)
+        volume: 0.8                       // Volume level (0.0 to 1.0)
     }
 };
 

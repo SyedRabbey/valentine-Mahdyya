@@ -19,6 +19,7 @@ const CONFIG = {
 
     // Questions and answers
     // Customize each question and its possible responses
+    
     questions: {
         first: {
             text: "Do you think I'm hot?",                                    // First interaction
@@ -32,9 +33,9 @@ const CONFIG = {
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "Will you pleaaaase listen to those africans and be my valentine? 🌹", // The big question!
+            yesBtn: "Hmmmm yeah!",                                             // Text for "Yes" button
+            noBtn: "Yes I will!"                                                 // Text for "No" button
         }
     },
 
@@ -49,7 +50,7 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Wahooooooo I'm the luckiest man in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
+        message: "Be ready for Feb 14th beautiful!",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 

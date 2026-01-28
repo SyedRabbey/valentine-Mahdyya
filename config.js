@@ -43,7 +43,7 @@ const CONFIG = {
         third: {
             text: "Will you pleaaaase be my valentine? 🌹",
             yesBtn: "Hmmmm yeah!",
-            noBtn: "Yes I will!"
+            noBtn: "I need to sleep on it!"
         }
     },
 

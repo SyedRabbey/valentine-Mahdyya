@@ -28,7 +28,7 @@ const CONFIG = {
         },
 
         video: {
-            text: "Watch this before answering 💖",
+            text: "Watch this before moving forward 💖",
             videoUrl: "assets/video.mp4",
             nextBtn: "Next ❤️"
         },
@@ -48,7 +48,7 @@ const CONFIG = {
 
     celebration: {
         title: "Get ready for a fun-filled Feb 14th! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
+        message: "Now come get your gift, a big virtual warm hug and a huge e-kiss!",
         emojis: "🎁💖🤗💝💋❤️💕"
     },
 

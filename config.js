@@ -4,7 +4,7 @@
 
 const CONFIG = {
 
-    valentineName: "Mahdyya-",
+    valentineName: "Mahdyya",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
@@ -22,10 +22,10 @@ const CONFIG = {
     
     questions: {
         first: {
-            text: "Do you think I'm hot?",
+            text: "Do you love me?",
             yesBtn: "Yes",
             noBtn: "No",
-            secretAnswer: "You're soooo sexy! ❤️"
+            secretAnswer: "I love you soooo much! ❤️"
         },
     
         second: {
@@ -41,11 +41,27 @@ const CONFIG = {
         },
     
         third: {
-            text: "Will you pleaaaase listen to those africans and be my valentine? 🌹",
+            text: "Will you pleaaaase be my valentine? 🌹",
             yesBtn: "Hmmmm yeah!",
             noBtn: "Yes I will!"
         }
     },
+
+    // Love meter messages
+    // They show up depending on how far they slide the meter
+    loveMessages: {
+        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
+        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
+        normal: "And beyond! 🥰"                           // Shows when they go past 100%
+    },
+
+    // Messages that appear after they say "Yes!"
+    celebration: {
+        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
+        message: "Now come get your gift, a big warm hug and a huge kiss!",
+        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+    },
+
 
     // Color scheme for the website
     // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations

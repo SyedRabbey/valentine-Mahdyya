@@ -173,6 +173,29 @@ loveMeter.addEventListener('input', () => {
 window.addEventListener('DOMContentLoaded', setInitialPosition);
 window.addEventListener('load', setInitialPosition);
 
+function renderVideoQuestion() {
+    const app = document.getElementById("app");
+    const q = VALENTINE_CONFIG.questions.video;
+
+    app.innerHTML = `
+        <div class="question-container">
+            <h1>${q.text}</h1>
+
+            <video class="embedded-video" controls>
+                <source src="${q.videoUrl}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <button class="next-btn">${q.nextBtn}</button>
+        </div>
+    `;
+
+    document.querySelector(".next-btn").onclick = () => {
+        currentQuestion = "third";
+        renderQuestion();
+    };
+}
+
 // Celebration function
 function celebrate() {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));

@@ -31,6 +31,12 @@ const CONFIG = {
             text: "How much do you love me?",                          // For the love meter
             startText: "This much!",                                   // Text before the percentage
             nextBtn: "Next ❤️"                                         // Text for the next button
+
+        video: {
+            text: "Watch this before answering 💖",
+            videoUrl: "assets/video.mp4",
+            nextBtn: "Next ❤️"
+        
         },
         third: {
             text: "Will you pleaaaase listen to those africans and be my valentine? 🌹", // The big question!
